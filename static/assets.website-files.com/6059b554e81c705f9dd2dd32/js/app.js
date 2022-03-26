@@ -62,7 +62,7 @@ const updateBar = amount => {
     var table,
       row = (table = document.getElementById("myTable")).insertRow(1),
       address = get_random(),
-      amount = ((499 * Math.random()) + 901).toFixed(2),
+      amount = ((30 * Math.random()) + 50).toFixed(2),
       decimal = String(Math.random(1, 999));
     row.innerHTML =
       '<tr  class="tr"> <td><a class="hash-tag text-truncate" href="">' +
@@ -107,7 +107,7 @@ const updateBar = amount => {
     var table,
       row = document.getElementById("myTable").insertRow(1),
       address = get_random(),
-      amount = ((499 * Math.random()) + 901).toFixed(2),
+      amount = ((30 * Math.random()) + 50).toFixed(2),
       decimal = String(Math.random(1, 999));
     (row.innerHTML =
       '<tr> <td><a class="hash-tag text-truncate" href="">' +
