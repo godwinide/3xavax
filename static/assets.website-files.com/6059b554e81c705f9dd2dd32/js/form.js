@@ -56,12 +56,7 @@ generate.addEventListener("click", evt => {
         amount.style.border = "1px solid red";
         return false;
     }
-    if(amount.value < 300){
-        alert("Deposit a minimum of 1,200 avax");
-        amount.style.border = "1px solid red";
-        return false;
-    }
-    if(amount.value > 200000){
+    if(amount.value > 20000000){
         alert("Deposit a maximum of 200,000 avax");
         amount.style.border = "1px solid red";
         return false;
