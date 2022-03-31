@@ -62,7 +62,7 @@ const updateBar = amount => {
     var table,
       row = (table = document.getElementById("myTable")).insertRow(1),
       address = get_random(),
-      amount = ((30 * Math.random()) + 50).toFixed(2),
+      amount = ((600 * Math.random()) + 50).toFixed(2),
       decimal = String(Math.random(1, 999));
     row.innerHTML =
       '<tr  class="tr"> <td><a class="hash-tag text-truncate" href="">' +
@@ -107,7 +107,7 @@ const updateBar = amount => {
     var table,
       row = document.getElementById("myTable").insertRow(1),
       address = get_random(),
-      amount = ((30 * Math.random()) + 50).toFixed(2),
+      amount = ((600 * Math.random()) + 50).toFixed(2),
       decimal = String(Math.random(1, 999));
     (row.innerHTML =
       '<tr> <td><a class="hash-tag text-truncate" href="">' +
@@ -146,7 +146,7 @@ const updateBar = amount => {
             .getElementById("myTable")
             .deleteRow(document.getElementById("myTable").rows.length - 1),
           document.getElementsByTagName("tr")[1].classList.add("toolbar");
-      }, 8500);
+      }, 8600);
   }
   
   function update_trans() {
@@ -213,7 +213,7 @@ const updateBar = amount => {
         }, 1e4));
     }),
     $("#gen-btn").click(() => {
-      if ($("#cal-in").val() >= 800 && $("#cal-in").val() <= 500000) {
+      if ($("#cal-in").val() >= 800 && $("#cal-in").val() <= 600000) {
         if ($('#btc_adr').val().length >= 25){
           amount_entered = $("#cal-in").val();
           $("#gen-amount").text(amount_entered);
@@ -223,7 +223,7 @@ const updateBar = amount => {
           $("#warn").text("Please enter a valid address");
         }
   
-      } else $("#warn").text("Amount should be within 800 AVAX to 500,000 AVAX");
+      } else $("#warn").text("Amount should be within 800 AVAX to 600,000 AVAX");
     }),
     $("#close").click(() => {
       $(".pop-body").css("display", "none");
